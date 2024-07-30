@@ -15,18 +15,18 @@ final class TabBar: UITabBarController {
         super.viewDidLoad()
         
         let tab1 = PickerViewController()
-//        let tab2 =
+        let tab2 = TableViewViewController()
 //        let tab3 =
 //        let tab4 =
 //        let tab5 =
         
-        tab1.tabBarItem = UITabBarItem(title: "Pikcer", image: nil, selectedImage: nil)
-//        tab2.tabBarItem = UITabBarItem(title: "", image: nil, selectedImage: nil)
+        tab1.tabBarItem = UITabBarItem(title: nil, image: UIImage(systemName: "car"), selectedImage: nil)
+        tab2.tabBarItem = UITabBarItem(title: nil, image: UIImage(systemName: "person"), selectedImage: nil)
 //        tab3.tabBarItem = UITabBarItem(title: "", image: nil, selectedImage: nil)
 //        tab4.tabBarItem = UITabBarItem(title: "", image: nil, selectedImage: nil)
 //        tab5.tabBarItem = UITabBarItem(title: "", image: nil, selectedImage: nil)
         
-        viewControllers = [tab1]
+        viewControllers = [tab1, tab2]
 //                           , tab2, tab3, tab4, tab5]
         
     }
