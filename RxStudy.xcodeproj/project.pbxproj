@@ -18,6 +18,8 @@
 		D462AAD82C58ACA100602121 /* BasicButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D462AAD72C58ACA100602121 /* BasicButtonViewController.swift */; };
 		D462AADA2C58C06E00602121 /* OperatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D462AAD92C58C06E00602121 /* OperatorViewController.swift */; };
 		D462AADD2C5917FE00602121 /* PickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D462AADC2C5917FE00602121 /* PickerViewController.swift */; };
+		D462AAE02C59326B00602121 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D462AADF2C59326B00602121 /* TabBar.swift */; };
+		D462AAE22C59356100602121 /* TableViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D462AAE12C59356100602121 /* TableViewViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,8 @@
 		D462AAD72C58ACA100602121 /* BasicButtonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicButtonViewController.swift; sourceTree = "<group>"; };
 		D462AAD92C58C06E00602121 /* OperatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperatorViewController.swift; sourceTree = "<group>"; };
 		D462AADC2C5917FE00602121 /* PickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerViewController.swift; sourceTree = "<group>"; };
+		D462AADF2C59326B00602121 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		D462AAE12C59356100602121 /* TableViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +75,7 @@
 				D462AABE2C58748C00602121 /* ViewController.swift */,
 				D462AAD92C58C06E00602121 /* OperatorViewController.swift */,
 				D462AAD72C58ACA100602121 /* BasicButtonViewController.swift */,
+				D462AADF2C59326B00602121 /* TabBar.swift */,
 				D462AADB2C5917D000602121 /* Exercise */,
 				D462AAC32C58748E00602121 /* Assets.xcassets */,
 				D462AAC52C58748E00602121 /* LaunchScreen.storyboard */,
@@ -83,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				D462AADC2C5917FE00602121 /* PickerViewController.swift */,
+				D462AAE12C59356100602121 /* TableViewViewController.swift */,
 			);
 			path = Exercise;
 			sourceTree = "<group>";
@@ -168,10 +174,12 @@
 			files = (
 				D462AADD2C5917FE00602121 /* PickerViewController.swift in Sources */,
 				D462AADA2C58C06E00602121 /* OperatorViewController.swift in Sources */,
+				D462AAE22C59356100602121 /* TableViewViewController.swift in Sources */,
 				D462AABF2C58748C00602121 /* ViewController.swift in Sources */,
 				D462AABB2C58748C00602121 /* AppDelegate.swift in Sources */,
 				D462AABD2C58748C00602121 /* SceneDelegate.swift in Sources */,
 				D462AAD82C58ACA100602121 /* BasicButtonViewController.swift in Sources */,
+				D462AAE02C59326B00602121 /* TabBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

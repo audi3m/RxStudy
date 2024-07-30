@@ -17,12 +17,15 @@ final class PickerViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        view.backgroundColor = .white
+        view.addSubview(pickerView)
+        pickerView.snp.makeConstraints { make in
+            make.center.equalTo(view.center)
+        }
+        Observable.just(["PickerView", "TableView", "Switch", "TextField", "Button"])
+            .bind(to: pickerView.rx.itemTitles) { _, item in
+                "\(item)"
+            }
+            .disposed(by: dispose)
     }
-    
-    
-    
-    
-    
-    
 }
