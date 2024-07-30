@@ -20,6 +20,7 @@
 		D462AADD2C5917FE00602121 /* PickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D462AADC2C5917FE00602121 /* PickerViewController.swift */; };
 		D462AAE02C59326B00602121 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D462AADF2C59326B00602121 /* TabBar.swift */; };
 		D462AAE22C59356100602121 /* TableViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D462AAE12C59356100602121 /* TableViewViewController.swift */; };
+		D462AAE62C593CED00602121 /* TextFieldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D462AAE52C593CED00602121 /* TextFieldViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		D462AADC2C5917FE00602121 /* PickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerViewController.swift; sourceTree = "<group>"; };
 		D462AADF2C59326B00602121 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		D462AAE12C59356100602121 /* TableViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewViewController.swift; sourceTree = "<group>"; };
+		D462AAE52C593CED00602121 /* TextFieldViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 			children = (
 				D462AADC2C5917FE00602121 /* PickerViewController.swift */,
 				D462AAE12C59356100602121 /* TableViewViewController.swift */,
+				D462AAE52C593CED00602121 /* TextFieldViewController.swift */,
 			);
 			path = Exercise;
 			sourceTree = "<group>";
@@ -172,6 +175,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D462AAE62C593CED00602121 /* TextFieldViewController.swift in Sources */,
 				D462AADD2C5917FE00602121 /* PickerViewController.swift in Sources */,
 				D462AADA2C58C06E00602121 /* OperatorViewController.swift in Sources */,
 				D462AAE22C59356100602121 /* TableViewViewController.swift in Sources */,

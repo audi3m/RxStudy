@@ -20,7 +20,7 @@ final class PickerViewController: UIViewController {
         view.backgroundColor = .white
         view.addSubview(pickerView)
         pickerView.snp.makeConstraints { make in
-            make.center.equalTo(view.center)
+            make.center.equalToSuperview()
         }
         Observable.just(["PickerView", "TableView", "Switch", "TextField", "Button"])
             .bind(to: pickerView.rx.itemTitles) { _, item in
