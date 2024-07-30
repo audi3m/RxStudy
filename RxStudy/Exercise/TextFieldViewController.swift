@@ -50,14 +50,34 @@ final class TextFieldViewController: UIViewController {
         
         textField.backgroundColor = .lightGray
         label.backgroundColor = .cyan
+        label.text = "스위치를 켜야 입력할 수 있어요"
         button.setTitle("버튼", for: .normal)
         button.backgroundColor = .brown
+        
+        let switchOn = switcher.rx.isOn
         
         let userValid = textField.rx.text.orEmpty
             .map { $0.count >= 5 }
             .share(replay: 1)
         
-//        userValid.bind(to: <#T##Bool...##Bool#>)
+        switchOn
+            .bind(to: button.rx.isEnabled)
+            .disposed(by: dispose)
+        
+        userValid
+            .map({ value in
+                value ? "스위치를 켜고 버튼을 누르세요" : "5글자 이상 입력하세요"
+            })
+            .bind(to: label.rx.text)
+            .disposed(by: dispose)
+        
+        button.rx.tap
+            .map { "버튼을 클릭했어요" }
+            .bind(to: label.rx.text)
+            .disposed(by: dispose)
+        
+        
+        
         
     }
     
