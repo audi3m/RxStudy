@@ -42,9 +42,5 @@ final class TableViewViewController: UIViewController {
                 self.present(alert, animated: true)
             }
             .disposed(by: dispose)
-        
-        
     }
-    
-    
 }

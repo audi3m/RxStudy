@@ -55,7 +55,6 @@ final class TextFieldViewController: UIViewController {
         button.backgroundColor = .brown
         
         let switchOn = switcher.rx.isOn
-        
         let userValid = textField.rx.text.orEmpty
             .map { $0.count >= 5 }
             .share(replay: 1)
@@ -65,23 +64,20 @@ final class TextFieldViewController: UIViewController {
             .disposed(by: dispose)
         
         userValid
-            .map({ value in
-                value ? "스위치를 켜고 버튼을 누르세요" : "5글자 이상 입력하세요"
-            })
-            .bind(to: label.rx.text)
+            .bind(with: self) { owner, value in
+                owner.label.text = value ? "스위치를 켜고 버튼을 누르세요" : "5글자 이상 입력하세요"
+            }
             .disposed(by: dispose)
         
         button.rx.tap
-            .map { "버튼을 클릭했어요" }
-            .bind(to: label.rx.text)
+            .bind(with: self) { owner, _ in
+                owner.label.text = "버튼을 클릭했어요"
+            }
             .disposed(by: dispose)
         
-        
-        
-        
+//        button.rx.tap
+//            .map { "버튼을 클릭했어요" }
+//            .bind(to: label.rx.text)
+//            .disposed(by: dispose)
     }
-    
-    
-    
-    
 }
