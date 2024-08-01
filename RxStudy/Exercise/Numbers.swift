@@ -70,10 +70,11 @@ final class Numbers: UIViewController {
         }
         
         barView.snp.makeConstraints { make in
-            make.centerX.equalTo(view)
+            make.leading.equalTo(plusLabel.snp.leading)
+            make.trailing.equalTo(number1.snp.trailing)
             make.top.equalTo(number3.snp.bottom).offset(10)
             make.height.equalTo(1)
-            make.width.equalTo(100)
+            
         }
         
         resultLabel.snp.makeConstraints { make in
