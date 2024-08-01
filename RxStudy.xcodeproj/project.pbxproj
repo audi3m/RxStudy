@@ -21,6 +21,8 @@
 		D462AAE02C59326B00602121 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D462AADF2C59326B00602121 /* TabBar.swift */; };
 		D462AAE22C59356100602121 /* TableViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D462AAE12C59356100602121 /* TableViewViewController.swift */; };
 		D462AAE62C593CED00602121 /* TextFieldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D462AAE52C593CED00602121 /* TextFieldViewController.swift */; };
+		D462AAEA2C59DF1800602121 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D462AAE92C59DF1800602121 /* UserViewController.swift */; };
+		D462AAEC2C5B0EDB00602121 /* Numbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D462AAEB2C5B0EDB00602121 /* Numbers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,8 @@
 		D462AADF2C59326B00602121 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		D462AAE12C59356100602121 /* TableViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewViewController.swift; sourceTree = "<group>"; };
 		D462AAE52C593CED00602121 /* TextFieldViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldViewController.swift; sourceTree = "<group>"; };
+		D462AAE92C59DF1800602121 /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
+		D462AAEB2C5B0EDB00602121 /* Numbers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Numbers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,8 +79,9 @@
 				D462AABA2C58748C00602121 /* AppDelegate.swift */,
 				D462AABC2C58748C00602121 /* SceneDelegate.swift */,
 				D462AABE2C58748C00602121 /* ViewController.swift */,
-				D462AAD92C58C06E00602121 /* OperatorViewController.swift */,
 				D462AAD72C58ACA100602121 /* BasicButtonViewController.swift */,
+				D462AAD92C58C06E00602121 /* OperatorViewController.swift */,
+				D462AAE92C59DF1800602121 /* UserViewController.swift */,
 				D462AADF2C59326B00602121 /* TabBar.swift */,
 				D462AADB2C5917D000602121 /* Exercise */,
 				D462AAC32C58748E00602121 /* Assets.xcassets */,
@@ -92,6 +97,7 @@
 				D462AADC2C5917FE00602121 /* PickerViewController.swift */,
 				D462AAE12C59356100602121 /* TableViewViewController.swift */,
 				D462AAE52C593CED00602121 /* TextFieldViewController.swift */,
+				D462AAEB2C5B0EDB00602121 /* Numbers.swift */,
 			);
 			path = Exercise;
 			sourceTree = "<group>";
@@ -176,11 +182,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				D462AAE62C593CED00602121 /* TextFieldViewController.swift in Sources */,
+				D462AAEA2C59DF1800602121 /* UserViewController.swift in Sources */,
 				D462AADD2C5917FE00602121 /* PickerViewController.swift in Sources */,
 				D462AADA2C58C06E00602121 /* OperatorViewController.swift in Sources */,
 				D462AAE22C59356100602121 /* TableViewViewController.swift in Sources */,
 				D462AABF2C58748C00602121 /* ViewController.swift in Sources */,
 				D462AABB2C58748C00602121 /* AppDelegate.swift in Sources */,
+				D462AAEC2C5B0EDB00602121 /* Numbers.swift in Sources */,
 				D462AABD2C58748C00602121 /* SceneDelegate.swift in Sources */,
 				D462AAD82C58ACA100602121 /* BasicButtonViewController.swift in Sources */,
 				D462AAE02C59326B00602121 /* TabBar.swift in Sources */,

@@ -7,7 +7,7 @@
 
 import UIKit
 import RxSwift
-import RxCocoa
+//import RxCocoa
 import SnapKit
 
 final class BasicButtonViewController: UIViewController {
@@ -27,50 +27,15 @@ final class BasicButtonViewController: UIViewController {
         secondExample()
     }
     
-    private func configureView() {
-        view.backgroundColor = .white
-        view.addSubview(label)
-        view.addSubview(button)
-        view.addSubview(textField)
-        view.addSubview(secondLabel)
-        
-        label.snp.makeConstraints { make in
-            make.top.horizontalEdges.equalTo(view.safeAreaLayoutGuide).inset(50)
-            make.height.equalTo(100)
-        }
-        
-        textField.snp.makeConstraints { make in
-            make.horizontalEdges.equalToSuperview()
-            make.height.equalTo(50)
-            make.top.equalTo(label.snp.bottom).offset(50)
-        }
-        
-        secondLabel.snp.makeConstraints { make in
-            make.horizontalEdges.equalToSuperview()
-            make.height.equalTo(50)
-            make.top.equalTo(textField.snp.bottom).offset(20)
-        }
-        
-        button.snp.makeConstraints { make in
-            make.top.equalTo(secondLabel.snp.bottom).offset(50)
-            make.centerX.equalToSuperview()
-            make.size.equalTo(50)
-        }
-        
-        label.backgroundColor = .lightGray
-        label.textAlignment = .center
-        
-        textField.backgroundColor = .lightGray
-        
-        secondLabel.backgroundColor = .lightGray
-        
-        button.backgroundColor = .systemBlue
+    override func viewDidAppear(_ animated: Bool) {
+        present(OperatorViewController(), animated: true)
     }
     
     private func secondExample() {
         button.rx.tap
-            .map { "두 번째 버튼을 클릭했어요" }
+            .map { "두 번째 버튼을 클릭했어요 \(Int.random(in: 0...100))" }
             .bind(to: secondLabel.rx.text, textField.rx.text)
+//            .dispose()
             .disposed(by: dispose)
     }
     
@@ -170,5 +135,43 @@ final class BasicButtonViewController: UIViewController {
         // 퀴즈 subscribe???
 //        label.rx.text
         
+    }
+    
+    private func configureView() {
+        view.backgroundColor = .white
+        view.addSubview(label)
+        view.addSubview(button)
+        view.addSubview(textField)
+        view.addSubview(secondLabel)
+        
+        label.snp.makeConstraints { make in
+            make.top.horizontalEdges.equalTo(view.safeAreaLayoutGuide).inset(50)
+            make.height.equalTo(100)
+        }
+        
+        textField.snp.makeConstraints { make in
+            make.horizontalEdges.equalToSuperview()
+            make.height.equalTo(50)
+            make.top.equalTo(label.snp.bottom).offset(50)
+        }
+        
+        secondLabel.snp.makeConstraints { make in
+            make.horizontalEdges.equalToSuperview()
+            make.height.equalTo(50)
+            make.top.equalTo(textField.snp.bottom).offset(20)
+        }
+        
+        button.snp.makeConstraints { make in
+            make.top.equalTo(secondLabel.snp.bottom).offset(50)
+            make.centerX.equalToSuperview()
+            make.size.equalTo(50)
+        }
+        
+        label.backgroundColor = .lightGray
+        label.textAlignment = .center
+        
+        textField.backgroundColor = .lightGray
+        secondLabel.backgroundColor = .lightGray
+        button.backgroundColor = .systemBlue
     }
 }

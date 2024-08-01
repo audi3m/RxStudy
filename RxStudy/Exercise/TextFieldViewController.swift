@@ -7,7 +7,7 @@
 
 import UIKit
 import RxSwift
-import RxCocoa
+//import RxCocoa
 import SnapKit
 
 final class TextFieldViewController: UIViewController {
@@ -55,6 +55,8 @@ final class TextFieldViewController: UIViewController {
         button.backgroundColor = .brown
         
         let switchOn = switcher.rx.isOn
+            .share(replay: 1)
+        
         let userValid = textField.rx.text.orEmpty
             .map { $0.count >= 5 }
             .share(replay: 1)

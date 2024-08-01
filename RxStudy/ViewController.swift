@@ -7,8 +7,8 @@
 
 import UIKit
 import RxSwift
-import SnapKit
 import RxCocoa
+import SnapKit
 
 final class ViewController: UIViewController {
     
