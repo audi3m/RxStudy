@@ -18,6 +18,8 @@ final class PickerViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
+        navigationItem.title = "Picker"
+        
         view.addSubview(pickerView)
         pickerView.snp.makeConstraints { make in
             make.center.equalToSuperview()

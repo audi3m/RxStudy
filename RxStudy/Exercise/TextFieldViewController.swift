@@ -21,6 +21,7 @@ final class TextFieldViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.title = "Switch & Validation"
         view.backgroundColor = .white
         view.addSubview(textField)
         view.addSubview(label)

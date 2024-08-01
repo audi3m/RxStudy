@@ -23,6 +23,7 @@ final class Numbers: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.title = "Numbers"
         configureView()
         
         Observable
